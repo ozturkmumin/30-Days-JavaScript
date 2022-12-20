@@ -44,9 +44,14 @@ function VKI(weight, m2) {
      console.log(VKI);
 }
 function showDateTime() {
-     let Dateout = new Date();
+     const d = new Date();
+     console.log(d);
 }
-
+function reversefunc(A, B, C, D, E) {
+     let reversef = [A, B, C, D, E];
+     console.log(reversef.reverse());
+}
+function addItem() {}
 console.log(generateFullName());
 console.log(generateFullName("Alperen", "Bayraktar")); // functionu manuel olarak parametrelerini değiştirdik
 addNumbers(10, 20); // addNumbers fonksiyonuna iki parametre belirledik bunları topladık
@@ -59,3 +64,5 @@ substance(15, 3); // Yoğunluk hesapladık
 speed(150, 5); // Hız hesapladık
 person(50 * 9, 80); // Ağırlık hesapladık ikinci parametre yer çekimi
 VKI(64, 1.7 * 2); //Vücut kitle indeksini hesapladık boyu 1.7 olarak kiloyu 75 olarak belirledim
+showDateTime(); // Function ile date objesini çektik
+reversefunc(1, 2, 3, 4, 5); // ters çeviren fonksiyon yazdık
