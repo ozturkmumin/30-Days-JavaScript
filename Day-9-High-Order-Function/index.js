@@ -31,7 +31,7 @@ const haveprice = (products.filter = products.filter((product) => product.length
 const sum = numbers.reduce((acc, cur) => acc + cur, 0); // reduce methodu ile numbersın içerisindeki tüm sayıları topladık
 const countriecount = countries.reduce((acc, cur) => acc + cur); // reduce methodu ile countries içersindeki ülkeleri birleştirdik
 const somecontrol = numbers.some((b) => b === true);
-const countrie = countries.find((name) => (name.length = 6)); // countries arrayinin içerisinde ki ilk 6 harfli kelimeyi bulduks
+const countrie = countries.find((name) => (name.length = 6)); // countries arrayinin içerisinde ki ilk 6 harfli kelimeyi bulduk
 const countriesindex = countries.findIndex((name) => (name.length = 6));
 const pricefind = products.reduce((acc, cur) => acc + cur);
 const getFirstTenCountries = () => {
