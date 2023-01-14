@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+     <body>
+          <div id="demo"></div>
+          <div id="demo2"></div>
+
+          <script>
+               var countDownDate = new Date("Jan 13, 2023 18:00:00").getTime();
+
+               var zaman = setInterval(function () {
+                    var now = new Date().getTime();
+
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("demo").innerHTML = "Yüzde Kaç Zam Aldınız Öğrenmenize Kalan ";
+
+                    document.getElementById("demo2").innerHTML = days + "Gün " + hours + "Saat " + minutes + "Dakika" + seconds + "Saniye ";
+
+                    if (distance < 0) {
+                         clearInterval(zaman);
+                         document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+               }, 1000);
+          </script>
+     </body>
+</html>
