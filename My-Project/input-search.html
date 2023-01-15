@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               input[type="text"] {
+                    background-color: #f2f2f2;
+                    border: 2px solid #ccc;
+                    font-size: 16px;
+                    padding: 12px 20px;
+                    width: 50%;
+               }
+
+               input[type="text"]:focus {
+                    border: 2px solid #555;
+               }
+               .modern-div {
+                    background-color: #f2f2f2;
+                    border: 2px solid #ccc;
+                    font-size: 16px;
+                    padding: 12px 20px;
+                    width: 50%;
+                    transition: all 0.5s ease-in-out;
+               }
+
+               .modern-div:hover {
+                    background-color: #555;
+                    color: #fff;
+               }
+
+               .modern-div:focus {
+                    border: 2px solid #555;
+                    outline: none;
+               }
+          </style>
+     </head>
+     <body>
+          <input type="text" id="searchInput" oninput="search()" />
+
+          <div id="content">
+               <div class="item modern-div">Item 1</div>
+               <div class="item modern-div">Item 2</div>
+               <div class="item modern-div">Item 3</div>
+               <div class="item modern-div">Item 4</div>
+               <div class="item modern-div">Item 5</div>
+          </div>
+          <script>
+               function search() {
+                    // Input alanındaki değeri alalım
+                    var inputValue = document.getElementById("searchInput").value;
+                    // Sayfadaki tüm elementleri alalım
+                    var elements = document.getElementById("content").getElementsByTagName("*");
+                    // Her element için arama yapalım
+                    for (var i = 0; i < elements.length; i++) {
+                         if (elements[i].innerHTML.toUpperCase().indexOf(inputValue.toUpperCase()) > -1) {
+                              elements[i].style.display = "block";
+                         } else {
+                              elements[i].style.display = "none";
+                         }
+                    }
+               }
+          </script>
+     </body>
+</html>

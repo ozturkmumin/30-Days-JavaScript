@@ -1,14 +1,14 @@
-const acity = document.querySelector("#A-city");
-const acityJSON = JSON.stringify(acity);
-localStorage.setItem("acity", acityJSON);
-console.log(localStorage);
-document.addEventListener("DOMContentLoaded", function () {
-     var checkbox = document.getElementById("A-city");
-     if (checkbox) {
-          checkbox.addEventListener("click", function () {
-               if (this.checked) {
-                    localStorage.setItem("checkbox", this.value);
-               }
-          });
+// Sayfayı yenilediğimizde checkbox'un seçili olmasını sağlamak için:
+window.onload = function () {
+     // localStorage'dan seçili olup olmadığını alalım
+     var isChecked = localStorage.getItem("isChecked");
+     if (isChecked === "true") {
+          document.getElementById("checkbox").checked = true;
      }
-});
+};
+
+// Checkbox'un seçili olup olmadığını kaydetmek için:
+function saveCheckbox() {
+     var checkbox = document.getElementById("checkbox");
+     localStorage.setItem("isChecked", checkbox.checked);
+}
