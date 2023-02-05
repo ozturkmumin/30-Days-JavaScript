@@ -5,6 +5,92 @@
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <title>Document</title>
+
+          <title>Document Object Model:30 Days Of JavaScript</title>
+          <style>
+               #container2,
+               #container3,
+               #container4,
+               #container5,
+               #container6 {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: green;
+                    padding: 1.5rem;
+               }
+               #python-list {
+                    display: none;
+                    transition: all 0.5s ease-in-out;
+               }
+               #javascript-list {
+                    display: none;
+               }
+               #css-list {
+                    display: none;
+               }
+               #mobile-list {
+                    display: none;
+               }
+          </style>
      </head>
-     <body></body>
+     <body>
+          <div id="container"></div>
+
+          <div class="list">
+               <div id="container2">
+                    <div>30 30DaysOfPython</div>
+                    <div style="display: flex; flex-direction: column">
+                         <div id="python" style="cursor: pointer"><span>&#10145;</span> Pyhton</div>
+                         <ul id="python-list">
+                              <li>Python 1</li>
+                              <li>Python 2</li>
+                              <li>Python 3</li>
+                         </ul>
+                    </div>
+                    <div>Done</div>
+               </div>
+
+               <div id="container4">
+                    <div>30 30DaysOfJavaScript</div>
+                    <div style="display: flex; flex-direction: column">
+                         <div id="javascript" style="cursor: pointer"><span>&#10145;</span> JavaScript</div>
+                         <ul id="javascript-list">
+                              <li>Node.js</li>
+                              <li>Vue.js</li>
+                              <li>React.js</li>
+                         </ul>
+                    </div>
+                    <div>Done</div>
+               </div>
+               <div id="container5">
+                    <div>30 30DaysOfHtml&Css</div>
+
+                    <div style="display: flex; flex-direction: column">
+                         <div id="htmlcss" style="cursor: pointer"><span>&#10145;</span>Html & Css</div>
+                         <ul id="css-list">
+                              <li>Bootstrap</li>
+                              <li>Bulma</li>
+                              <li>Tailwind</li>
+                         </ul>
+                    </div>
+                    <div>Done</div>
+               </div>
+               <div id="container6">
+                    <div>30 30DaysOfFlutter</div>
+                    <div style="display: flex; flex-direction: column">
+                         <div id="mobilbtn" style="cursor: pointer"><span>&#10145;</span>Flutter</div>
+                         <ul id="mobile-list">
+                              <li>Kotlin</li>
+                              <li>React-Native</li>
+                              <li>Swift</li>
+                         </ul>
+                    </div>
+                    <div>Done</div>
+               </div>
+          </div>
+
+          <script src="index.js"></script>
+     </body>
 </html>

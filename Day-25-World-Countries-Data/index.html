@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               .btn {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+               }
+               .population-btn,
+               .languages {
+                    background-color: #f2a93b;
+                    border: none;
+                    color: black;
+                    padding: 0.5rem;
+                    margin: 15px;
+                    cursor: pointer;
+               }
+               .languages:hover {
+                    background-color: #614418;
+                    color: white;
+                    transition: all 0.4s ease;
+               }
+               .population-btn:hover {
+                    background-color: #614418;
+                    color: white;
+                    transition: all 0.4s ease;
+               }
+               .countries {
+                    display: flex;
+                    flex-direction: column;
+               }
+               ul {
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+               }
+               li {
+                    margin: 15px;
+               }
+               .world {
+                    width: 80%;
+                    background-color: #f2a93b;
+               }
+               .china {
+                    width: 27%;
+                    background-color: #f2a93b;
+               }
+               .india {
+                    width: 26%;
+                    background-color: #f2a93b;
+               }
+               .usa {
+                    width: 8%;
+                    background-color: #f2a93b;
+               }
+               .indonesia {
+                    width: 7%;
+                    background-color: #f2a93b;
+               }
+               .brazil {
+                    width: 6%;
+                    background-color: #f2a93b;
+               }
+               .pakistan {
+                    width: 6%;
+                    background-color: #f2a93b;
+               }
+               .nigeria {
+                    width: 4%;
+                    background-color: #f2a93b;
+               }
+               .bangaledsh {
+                    width: 4%;
+                    background-color: #f2a93b;
+               }
+               .russia {
+                    width: 3%;
+                    background-color: #f2a93b;
+               }
+               .japan {
+                    width: 3%;
+                    background-color: #f2a93b;
+               }
+               .countries div {
+                    display: flex;
+                    padding: 15px;
+               }
+               .countries li {
+                    width: 150px;
+                    max-width: 150px;
+               }
+               span {
+                    width: 100%;
+                    max-width: 140px;
+                    text-align: right;
+               }
+               .world-container {
+                    width: 100%;
+               }
+               .world-container span {
+                    width: 20%;
+               }
+          </style>
+     </head>
+     <body>
+          <div class="btn">
+               <button id="population-btn" type="button" class="population-btn">POPULATION</button>
+               <button id="languages" type="button" class="languages">LANGUAGES</button>
+          </div>
+          <div id="countries" class="countries">
+               <ul>
+                    <div>
+                         <li>World</li>
+                         <div class="world-container">
+                              <div class="world"></div>
+                              <span>7,693,165,599</span>
+                         </div>
+                    </div>
+                    <div>
+                         <li>China</li>
+                         <div class="china"></div>
+                         <span>1,377,422,166</span>
+                    </div>
+                    <div>
+                         <li>India</li>
+                         <div class="india"></div>
+                         <span>1,295,210,000</span>
+                    </div>
+                    <div>
+                         <li>USA</li>
+                         <div class="usa"></div>
+                         <span>323,947,000</span>
+                    </div>
+                    <div>
+                         <li>Indonesia</li>
+                         <div class="indonesia"></div>
+                         <span>258,705,000</span>
+                    </div>
+                    <div>
+                         <li>Brazil</li>
+                         <div class="brazil"></div>
+                         <span>206,135,893</span>
+                    </div>
+                    <div>
+                         <li>Pakistan</li>
+                         <div class="pakistan"></div>
+                         <span>194,125,062</span>
+                    </div>
+                    <div>
+                         <li>Nigeria</li>
+                         <div class="nigeria"></div>
+                         <span>186,988,000</span>
+                    </div>
+                    <div>
+                         <li>Bangladesh</li>
+                         <div class="bangaledsh"></div>
+                         <span>161,006,790</span>
+                    </div>
+                    <div>
+                         <li>Russia</li>
+                         <div class="russia"></div>
+                         <span>146,599,183</span>
+                    </div>
+                    <div>
+                         <li>Japan</li>
+                         <div class="japan"></div>
+                         <span>126,960,000</span>
+                    </div>
+               </ul>
+          </div>
+          <div id="languages-container" class="countries">
+               <ul>
+                    <div>
+                         <li>World</li>
+                         <div class="world-container">
+                              <div class="world"></div>
+                              <span>7,693,165,599</span>
+                         </div>
+                    </div>
+                    <div>
+                         <li>China</li>
+                         <div class="china"></div>
+                         <span>1,377,422,166</span>
+                    </div>
+                    <div>
+                         <li>India</li>
+                         <div class="india"></div>
+                         <span>1,295,210,000</span>
+                    </div>
+                    <div>
+                         <li>USA</li>
+                         <div class="usa"></div>
+                         <span>323,947,000</span>
+                    </div>
+                    <div>
+                         <li>Indonesia</li>
+                         <div class="indonesia"></div>
+                         <span>258,705,000</span>
+                    </div>
+                    <div>
+                         <li>Brazil</li>
+                         <div class="brazil"></div>
+                         <span>206,135,893</span>
+                    </div>
+                    <div>
+                         <li>Pakistan</li>
+                         <div class="pakistan"></div>
+                         <span>194,125,062</span>
+                    </div>
+                    <div>
+                         <li>Nigeria</li>
+                         <div class="nigeria"></div>
+                         <span>186,988,000</span>
+                    </div>
+                    <div>
+                         <li>Bangladesh</li>
+                         <div class="bangaledsh"></div>
+                         <span>161,006,790</span>
+                    </div>
+                    <div>
+                         <li>Russia</li>
+                         <div class="russia"></div>
+                         <span>146,599,183</span>
+                    </div>
+                    <div>
+                         <li>Japan</li>
+                         <div class="japan"></div>
+                         <span>126,960,000</span>
+                    </div>
+               </ul>
+          </div>
+          <script src="index.js"></script>
+     </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+          <style>
+               .planetcalculate {
+                    display: flex;
+                    padding: 1rem;
+               }
+               input[type="text"] {
+                    padding: 0.5em;
+                    margin-bottom: 1em;
+                    font-size: 1.2em;
+                    width: 50%;
+                    text-align: center;
+               }
+
+               button {
+                    padding: 0.5em 1em;
+                    font-size: 1.2em;
+                    background-color: #4caf50;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    margin-bottom: 1em;
+               }
+
+               select {
+                    padding: 0.5em;
+                    font-size: 1.2em;
+                    max-height: 44px;
+                    width: 20%;
+               }
+               #output {
+                    padding: 0.5em;
+                    margin-bottom: 1em;
+                    font-size: 1.2em;
+                    width: 50%;
+                    text-align: center;
+                    border: 1px solid black;
+               }
+          </style>
+     </head>
+     <body>
+          <input id="inputkilogram" type="text" placeholder="mass a kilogram" />
+          <button id="Calculatebtn" type="button">Calculate</button>
+          <select name="Planets" id="Planet">
+               <option id="Mercury" value="Mercury">Mercury</option>
+               <option id="Mars" value="Mars">Mars</option>
+               <option id="Uranus" value="Uranus">Uranus</option>
+               <option id="Venus" value="Venus">Venus</option>
+               <option id="Jupiter" value="Jupiter">Jupiter</option>
+               <option id="Neptune" value="Neptune">Neptune</option>
+               <option id="Earth" value="Earth">Earth</option>
+               <option id="Saturn" value="Saturn">Saturn</option>
+               <option id="Pluto" value="Pluto">Pluto</option>
+          </select>
+          <div id="output">Calculate from Above</div>
+          <script src="index.js"></script>
+     </body>
+</html>

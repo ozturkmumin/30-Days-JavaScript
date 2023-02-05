@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Document</title>
+     </head>
+
+     <body>
+          <style>
+               .enterkey {
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+               }
+               .presskey {
+                    width: 25%;
+                    font-size: 40px;
+                    color: black;
+                    border: 1px solid black;
+                    box-shadow: black 0px 2px 16px -5px;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    text-align: center;
+               }
+               .number {
+                    margin-top: 25px;
+                    width: 8%;
+                    min-width: 120px;
+                    color: black;
+                    border: 1px solid black;
+                    box-shadow: black 0px 2px 16px -5px;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 40px;
+               }
+          </style>
+          <div class="enterkey">
+               <div id="presskey" class="presskey"></div>
+               <div id="number" class="number"></div>
+          </div>
+          <script src="index.js"></script>
+     </body>
+</html>

@@ -22,7 +22,7 @@ class animal {
      getAnimalInfo() {
           let fullName = this.getFullName();
 
-          let info = `${fullName} is ${this.age}. It's colour ${this.colour}, ${this.country}`;
+          let info = `${fullName}  is ${this.age}. It's colour ${this.colour}, ${this.country}`;
           return info;
      }
 }
